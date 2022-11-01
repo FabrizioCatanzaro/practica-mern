@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(11, 2, 20);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#Main{
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.contenedorCard{
+  width: 30%;
+  text-align: center;
+  background-color: rgb(214, 240, 255);
+  color: black;
+  border-radius: 20px;
+  padding: .4rem;
+}
+
+.tituloCard{
+  margin: 1rem 0;
+  color: rgb(36, 5, 175);
+  font-size: 3rem;
+}
+
+.photoCard{
+  width: 90%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+#ContenedorBodyCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+
+.itemBodyName{
+  color: rgb(36, 5, 175);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.itemBodyDescription{
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+#ContenedorButtons{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 1rem;
+}
+
+#ContenedorButtons2{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin: 1rem 0 1rem;
+  align-items: center;
+}
+
+.btnCard{
+  border: 3px solid black;
+  padding: .5rem;
+  transition: .4s ease;
   color: white;
+  font-size: 1.2rem;
+  background-color: rgb(36, 5, 175);
 }
 
-.App-link {
-  color: #61dafb;
+.btnCard:hover{
+  transform: scale(1.2);
+  color: rgb(214, 240, 255);
+  background-color: rgb(11, 2, 20);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnFlecha{
+  border: none;
+  transition: .4s ease;
+}
+
+.btnFlecha:hover{
+  transform: scale(1.2);
+}
+
+.imageButtonCard{
+  background-color: rgb(214, 240, 255);
+  height: 2.5rem;
 }
